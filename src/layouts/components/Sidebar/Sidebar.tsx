@@ -21,7 +21,7 @@ const Sidebar = (props: Props) => {
         To: "opacity-0"
     --> */}
         <div
-          className="fixed inset-0 bg-gray-600 bg-opacity-75"
+          className="fixed inset-0 bg-blue-600 bg-opacity-75"
           aria-hidden="true"
         ></div>
 
@@ -54,7 +54,7 @@ const Sidebar = (props: Props) => {
               <span className="sr-only">Close sidebar</span>
               {/* <!-- Heroicon name: outline/x --> */}
               <svg
-                className="h-6 w-6 text-gray-600"
+                className="h-6 w-6 text-blue-600"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -75,23 +75,23 @@ const Sidebar = (props: Props) => {
             <div className="flex-shrink-0 flex items-center px-4">
               <img
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-800-text.svg"
+                src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-blue-800-text.svg"
                 alt="Workflow"
               />
             </div>
             <nav className="mt-5 px-2 space-y-1">
-              {/* <!-- Current: "bg-gray-100 text-gray-900", Default: "text-gray-600 hover:bg-gray-50 hover:text-gray-900" --> */}
+              {/* <!-- Current: "bg-blue-100 text-blue-900", Default: "text-blue-600 hover:bg-blue-50 hover:text-blue-900" --> */}
               <a
                 href="#"
-                className="bg-gray-100 text-gray-900 group flex items-center px-2 py-2 text-base font-medium rounded-md"
+                className="bg-blue-100 text-blue-900 group flex items-center px-2 py-2 text-base font-medium rounded-md"
               >
                 {/* <!-- */}
                 {/* Heroicon name: outline/home
 
-              Current: "text-gray-500", Default: "text-gray-400 group-hover:text-gray-500"
+              Current: "text-blue-500", Default: "text-blue-600 group-hover:text-blue-500"
             --> */}
                 <svg
-                  className="text-gray-500 mr-4 flex-shrink-0 h-6 w-6"
+                  className="text-blue-500 mr-4 flex-shrink-0 h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -110,11 +110,11 @@ const Sidebar = (props: Props) => {
 
               <a
                 href="#"
-                className="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium rounded-md"
+                className="text-blue-600 hover:bg-blue-50 hover:text-blue-900 group flex items-center px-2 py-2 text-base font-medium rounded-md"
               >
                 {/* <!-- Heroicon name: outline/users --> */}
                 <svg
-                  className="text-gray-400 group-hover:text-gray-500 mr-4 flex-shrink-0 h-6 w-6"
+                  className="text-blue-600 group-hover:text-blue-500 mr-4 flex-shrink-0 h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -133,11 +133,11 @@ const Sidebar = (props: Props) => {
 
               <a
                 href="#"
-                className="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium rounded-md"
+                className="text-blue-600 hover:bg-blue-50 hover:text-blue-900 group flex items-center px-2 py-2 text-base font-medium rounded-md"
               >
                 {/* <!-- Heroicon name: outline/folder --> */}
                 <svg
-                  className="text-gray-400 group-hover:text-gray-500 mr-4 flex-shrink-0 h-6 w-6"
+                  className="text-blue-600 group-hover:text-blue-500 mr-4 flex-shrink-0 h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -156,11 +156,11 @@ const Sidebar = (props: Props) => {
 
               <a
                 href="#"
-                className="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium rounded-md"
+                className="text-blue-600 hover:bg-blue-50 hover:text-blue-900 group flex items-center px-2 py-2 text-base font-medium rounded-md"
               >
                 {/* <!-- Heroicon name: outline/calendar --> */}
                 <svg
-                  className="text-gray-400 group-hover:text-gray-500 mr-4 flex-shrink-0 h-6 w-6"
+                  className="text-blue-600 group-hover:text-blue-500 mr-4 flex-shrink-0 h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -179,11 +179,11 @@ const Sidebar = (props: Props) => {
 
               <a
                 href="#"
-                className="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium rounded-md"
+                className="text-blue-600 hover:bg-blue-50 hover:text-blue-900 group flex items-center px-2 py-2 text-base font-medium rounded-md"
               >
                 {/* <!-- Heroicon name: outline/inbox --> */}
                 <svg
-                  className="text-gray-400 group-hover:text-gray-500 mr-4 flex-shrink-0 h-6 w-6"
+                  className="text-blue-600 group-hover:text-blue-500 mr-4 flex-shrink-0 h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -202,11 +202,11 @@ const Sidebar = (props: Props) => {
 
               <a
                 href="#"
-                className="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium rounded-md"
+                className="text-blue-600 hover:bg-blue-50 hover:text-blue-900 group flex items-center px-2 py-2 text-base font-medium rounded-md"
               >
                 {/* <!-- Heroicon name: outline/chart-bar --> */}
                 <svg
-                  className="text-gray-400 group-hover:text-gray-500 mr-4 flex-shrink-0 h-6 w-6"
+                  className="text-blue-600 group-hover:text-blue-500 mr-4 flex-shrink-0 h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -224,7 +224,7 @@ const Sidebar = (props: Props) => {
               </a>
             </nav>
           </div>
-          <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
+          <div className="flex-shrink-0 flex border-t border-blue-200 p-4">
             <a href="#" className="flex-shrink-0 group block">
               <div className="flex items-center">
                 <div>
@@ -235,10 +235,10 @@ const Sidebar = (props: Props) => {
                   />
                 </div>
                 <div className="ml-3">
-                  <p className="text-base font-medium text-gray-700 group-hover:text-gray-900">
+                  <p className="text-base font-medium text-blue-700 group-hover:text-blue-900">
                     Tom Cook
                   </p>
-                  <p className="text-sm font-medium text-gray-500 group-hover:text-gray-700">
+                  <p className="text-sm font-medium text-blue-500 group-hover:text-blue-700">
                     View profile
                   </p>
                 </div>
@@ -256,7 +256,7 @@ const Sidebar = (props: Props) => {
       <div className="hidden md:flex md:flex-shrink-0">
         <div className="flex flex-col w-64">
           {/* <!-- Sidebar component, swap this element with another sidebar if you like --> */}
-          <div className="flex-1 flex flex-col min-h-0 border-r border-gray-200 bg-white">
+          <div className="flex-1 flex flex-col min-h-0 border-r border-blue-200 bg-white">
             <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
               <div className="flex items-center flex-shrink-0 px-4">
                 <img
@@ -266,18 +266,18 @@ const Sidebar = (props: Props) => {
                 />
               </div>
               <nav className="mt-5 flex-1 px-2 bg-white space-y-1">
-                {/* <!-- Current: "bg-gray-100 text-gray-900", Default: "text-gray-600 hover:bg-gray-50 hover:text-gray-900" --> */}
+                {/* <!-- Current: "bg-blue-100 text-blue-900", Default: "text-blue-600 hover:bg-blue-50 hover:text-blue-900" --> */}
                 <a
                   href="#"
-                  className="bg-gray-100 text-gray-900 group flex items-center px-2 py-2 text-sm font-medium rounded-md"
+                  className="bg-blue-100 text-blue-900 group flex items-center px-2 py-2 text-sm font-medium rounded-md"
                 >
                   {/* <!-- */}
                   {/* Heroicon name: outline/home
 
-                Current: "text-gray-500", Default: "text-gray-400 group-hover:text-gray-500"
+                Current: "text-blue-500", Default: "text-blue-600 group-hover:text-blue-500"
               --> */}
                   <svg
-                    className="text-gray-500 mr-3 flex-shrink-0 h-6 w-6"
+                    className="text-blue-500 mr-3 flex-shrink-0 h-6 w-6"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -296,11 +296,11 @@ const Sidebar = (props: Props) => {
 
                 <a
                   href="#"
-                  className="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-sm font-medium rounded-md"
+                  className="text-blue-600 hover:bg-blue-50 hover:text-blue-900 group flex items-center px-2 py-2 text-sm font-medium rounded-md"
                 >
                   {/* <!-- Heroicon name: outline/users --> */}
                   <svg
-                    className="text-gray-400 group-hover:text-gray-500 mr-3 flex-shrink-0 h-6 w-6"
+                    className="text-blue-600 group-hover:text-blue-500 mr-3 flex-shrink-0 h-6 w-6"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -319,11 +319,11 @@ const Sidebar = (props: Props) => {
 
                 <a
                   href="#"
-                  className="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-sm font-medium rounded-md"
+                  className="text-blue-600 hover:bg-blue-50 hover:text-blue-900 group flex items-center px-2 py-2 text-sm font-medium rounded-md"
                 >
                   {/* <!-- Heroicon name: outline/folder --> */}
                   <svg
-                    className="text-gray-400 group-hover:text-gray-500 mr-3 flex-shrink-0 h-6 w-6"
+                    className="text-blue-600 group-hover:text-blue-500 mr-3 flex-shrink-0 h-6 w-6"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -342,11 +342,11 @@ const Sidebar = (props: Props) => {
 
                 <a
                   href="#"
-                  className="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-sm font-medium rounded-md"
+                  className="text-blue-600 hover:bg-blue-50 hover:text-blue-900 group flex items-center px-2 py-2 text-sm font-medium rounded-md"
                 >
                   {/* <!-- Heroicon name: outline/calendar --> */}
                   <svg
-                    className="text-gray-400 group-hover:text-gray-500 mr-3 flex-shrink-0 h-6 w-6"
+                    className="text-blue-600 group-hover:text-blue-500 mr-3 flex-shrink-0 h-6 w-6"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -365,11 +365,11 @@ const Sidebar = (props: Props) => {
 
                 <a
                   href="#"
-                  className="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-sm font-medium rounded-md"
+                  className="text-blue-600 hover:bg-blue-50 hover:text-blue-900 group flex items-center px-2 py-2 text-sm font-medium rounded-md"
                 >
                   {/* <!-- Heroicon name: outline/chart-bar --> */}
                   <svg
-                    className="text-gray-400 group-hover:text-gray-500 mr-3 flex-shrink-0 h-6 w-6"
+                    className="text-blue-600 group-hover:text-blue-500 mr-3 flex-shrink-0 h-6 w-6"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -387,7 +387,7 @@ const Sidebar = (props: Props) => {
                 </a>
               </nav>
             </div>
-            <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
+            <div className="flex-shrink-0 flex border-t border-blue-200 p-4">
               <a href="#" className="flex-shrink-0 w-full group block">
                 <div className="flex items-center">
                   <div>
@@ -398,10 +398,10 @@ const Sidebar = (props: Props) => {
                     />
                   </div>
                   <div className="ml-3">
-                    <p className="text-sm font-medium text-gray-600 group-hover:text-gray-500">
+                    <p className="text-sm font-medium text-blue-600 group-hover:text-blue-500">
                       Tom Cook
                     </p>
-                    <p className="text-xs font-medium text-gray-500 group-hover:text-gray-400">
+                    <p className="text-xs font-medium text-blue-500 group-hover:text-blue-600">
                       View profile
                     </p>
                   </div>
