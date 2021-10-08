@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, StatCard, Title, TitleWrapper } from "../../components/Card";
+import { Card, Layer, StatCard, Title, TitleWrapper } from "../../components/Card";
 import { Input, Select } from "../../components/Input";
 
 const Dashboard = () => {
@@ -7,9 +7,9 @@ const Dashboard = () => {
     <div>
       <div className="py-6">
         <TitleWrapper>
-          <Title>Dashboard</Title>
+          <Title>Statistics</Title>
         </TitleWrapper>
-        <div className=" mx-auto px-4 sm:px-6 md:px-8">
+        <Layer>
           {/* <!-- Replace with your content --> */}
           <div className="py-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -40,11 +40,16 @@ const Dashboard = () => {
             </div>
           </div>
           {/* <!-- /End replace --> */}
-        </div>
+        </Layer>
         <TitleWrapper>
           <Title>Recent Transfers</Title>
         </TitleWrapper>
-        <div className="my-5 mx-auto px-4 sm:px-6 md:px-8">
+        <Layer>
+          <Card>
+            
+          </Card>
+        </Layer>
+        <Layer>
           <Card>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-3">
               <div className="flex flex-col">
@@ -68,9 +73,9 @@ const Dashboard = () => {
               </button>
             </div>
           </Card>
-        </div>
+        </Layer>
 
-        <div className="my-5 mx-auto px-4 sm:px-6 md:px-8">
+        <Layer>
           <Card>
             <div className=" overflow-x-scroll border-b border-gray-200 sm:rounded-lg">
               <table className="min-w-full divide-y divide-gray-200">
@@ -160,11 +165,11 @@ const Dashboard = () => {
               </table>
             </div>
           </Card>
-        </div>
+        </Layer>
         <TitleWrapper>
           <Title>Failed Flutterwave Transfer</Title>
         </TitleWrapper>
-        <div className="my-5 mx-auto px-4 sm:px-6 md:px-8">
+        <Layer>
           <Card>
             <div className=" overflow-x-scroll border-b border-gray-200 sm:rounded-lg">
               <table className="min-w-full divide-y divide-gray-200">
@@ -212,30 +217,36 @@ const Dashboard = () => {
                     >
                       Date time
                     </th>
+                    <th></th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
                   <tr>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                      Jane Cooper
+                      #7637873637-7363773
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                      Regional Paradigm Technician
+                      0274488676
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                      jane.cooper@example.com
+                      GHS 12,300
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                      Admin
+                      GHS 1.2
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                      Admin
+                      Kwame
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                      Admin
+                      <span className="bg-blue-200 text-blue-700 px-4 rounded p-2">Active</span>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                      Admin
+                      {new Date().toDateString()}
+                    </td>
+                    <td>
+                      <button className="bg-blue-500 px-2 text-white rounded">
+                        Retry Transfer
+                      </button>
                     </td>
                   </tr>
 
@@ -244,7 +255,7 @@ const Dashboard = () => {
               </table>
             </div>
           </Card>
-        </div>
+        </Layer>
       </div>
     </div>
   );
