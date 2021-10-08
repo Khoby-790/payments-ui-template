@@ -1,3 +1,4 @@
+import { ReactNode } from "hoist-non-react-statics/node_modules/@types/react";
 
 
 export interface IRoute {
@@ -7,4 +8,5 @@ export interface IRoute {
     name?: string;
     description?: string;
     routes?: IRoute[];
+    icon?: (props: React.ComponentProps<'svg'>) => JSX.Element;
 }

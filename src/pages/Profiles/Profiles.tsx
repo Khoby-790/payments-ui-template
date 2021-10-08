@@ -12,28 +12,28 @@ const Profiles = () => {
             <div className="py-4">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <StatCard>
-                  <h1 className="text-lg text-gray-500 font-light">
+                  <h1 className="text-md text-gray-500 font-light">
                     NEW USERS
                   </h1>
-                  <h1 className="text-3xl text-gray-900">0</h1>
+                  <h1 className="text-md text-gray-900">0</h1>
                 </StatCard>
                 <StatCard>
-                  <h1 className="text-lg text-gray-500 font-light">
+                  <h1 className="text-md text-gray-500 font-light">
                     ALL USERS
                   </h1>
-                  <h1 className="text-3xl text-gray-900">0</h1>
+                  <h1 className="text-md text-gray-900">0</h1>
                 </StatCard>
                 <StatCard>
-                  <h1 className="text-lg text-gray-500 font-light">
+                  <h1 className="text-md text-gray-500 font-light">
                     INTERNAL TRANSFERS
                   </h1>
-                  <h1 className="text-3xl text-gray-900">0</h1>
+                  <h1 className="text-md text-gray-900">0</h1>
                 </StatCard>
                 <StatCard>
-                  <h1 className="text-lg text-gray-500 font-light">
+                  <h1 className="text-md text-gray-500 font-light">
                     INTERNAL TRANSFERS
                   </h1>
-                  <h1 className="text-3xl text-gray-900">0</h1>
+                  <h1 className="text-md text-gray-900">0</h1>
                 </StatCard>
               </div>
             </div>
@@ -43,35 +43,9 @@ const Profiles = () => {
             <Title>Suspended Users</Title>
           </TitleWrapper>
           <Layer>
-            <Card>
-              
-            </Card>
+            
           </Layer>
-          {/* <Layer>
-            <Card>
-              <div className="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-3">
-                <div className="flex flex-col">
-                  <label htmlFor="">Date from</label>
-                  <Input type="date" />
-                </div>
-                <div className="flex flex-col">
-                  <label htmlFor="">Date To</label>
-                  <Input type="date" />
-                </div>
-                <div className="flex flex-col">
-                  <label htmlFor="">Transfer Type</label>
-                  <Select>
-                    <option value="">Select one</option>
-                  </Select>
-                </div>
-              </div>
-              <div className=" my-3">
-                <button className="bg-blue-500 p-2 px-3 hover:bg-blue-700 text-white font-medium">
-                  Search transfers{" "}
-                </button>
-              </div>
-            </Card>
-          </Layer> */}
+
   
           <Layer>
             <Card>

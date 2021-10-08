@@ -17,25 +17,25 @@ const Dashboard = () => {
                 <h1 className="text-lg text-gray-500 font-light">
                   INTERNAL TRANSFERS
                 </h1>
-                <h1 className="text-3xl text-gray-900">0</h1>
+                <h1 className="text-lg text-gray-900">0</h1>
               </StatCard>
               <StatCard>
                 <h1 className="text-lg text-gray-500 font-light">
                   INTERNAL TRANSFERS
                 </h1>
-                <h1 className="text-3xl text-gray-900">0</h1>
+                <h1 className="text-lg text-gray-900">0</h1>
               </StatCard>
               <StatCard>
                 <h1 className="text-lg text-gray-500 font-light">
                   INTERNAL TRANSFERS
                 </h1>
-                <h1 className="text-3xl text-gray-900">0</h1>
+                <h1 className="text-lg text-gray-900">0</h1>
               </StatCard>
               <StatCard>
                 <h1 className="text-lg text-gray-500 font-light">
                   INTERNAL TRANSFERS
                 </h1>
-                <h1 className="text-3xl text-gray-900">0</h1>
+                <h1 className="text-lg text-gray-900">0</h1>
               </StatCard>
             </div>
           </div>
@@ -44,13 +44,8 @@ const Dashboard = () => {
         <TitleWrapper>
           <Title>Recent Transfers</Title>
         </TitleWrapper>
+        
         <Layer>
-          <Card>
-            
-          </Card>
-        </Layer>
-        <Layer>
-          <Card>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-3">
               <div className="flex flex-col">
                 <label htmlFor="">Date from</label>
@@ -72,12 +67,11 @@ const Dashboard = () => {
                 Search transfers{" "}
               </button>
             </div>
-          </Card>
+        
         </Layer>
 
         <Layer>
-          <Card>
-            <div className=" overflow-x-scroll border-b border-gray-200 sm:rounded-lg">
+            <div className=" overflow-x-scroll border-b border-gray-200 sm:rounded-none">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
                   <tr>
@@ -164,14 +158,12 @@ const Dashboard = () => {
                 </tbody>
               </table>
             </div>
-          </Card>
         </Layer>
         <TitleWrapper>
           <Title>Failed Flutterwave Transfer</Title>
         </TitleWrapper>
         <Layer>
-          <Card>
-            <div className=" overflow-x-scroll border-b border-gray-200 sm:rounded-lg">
+            <div className=" overflow-x-scroll border-b border-gray-200 sm:rounded-none">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
                   <tr>
@@ -254,7 +246,6 @@ const Dashboard = () => {
                 </tbody>
               </table>
             </div>
-          </Card>
         </Layer>
       </div>
     </div>
