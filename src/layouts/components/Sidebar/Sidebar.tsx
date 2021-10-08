@@ -257,7 +257,7 @@ const Sidebar = (props: Props) => {
       <div className="hidden md:flex md:flex-shrink-0">
         <div className="flex flex-col w-64">
           {/* <!-- Sidebar component, swap this element with another sidebar if you like --> */}
-          <div className="flex-1 flex flex-col min-h-0 border-r border-blue-200 bg-white">
+          <div className="flex-1 flex flex-col min-h-0 border-r border-gray-200 bg-color">
             <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
               <div className="flex items-center flex-shrink-0 px-4">
                 <img
@@ -266,7 +266,7 @@ const Sidebar = (props: Props) => {
                   alt="Workflow"
                 />
               </div>
-              <nav className="mt-5 flex-1 px-2 bg-white space-y-1">
+              <nav className="mt-5 flex-1 px-2 bg-color space-y-1">
                 {/* <!-- Current: "bg-blue-100 text-blue-900", Default: "text-blue-600 hover:bg-blue-50 hover:text-blue-900" --> */}
                 <Link
                   to="/"

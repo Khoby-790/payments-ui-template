@@ -1,12 +1,12 @@
 import React from 'react'
-import { ButtonOutline, Layer, StatCard, Title, TitleWrapper } from '../../components/Card'
-import { Input, Select } from '../../components/Input'
+import { Layer, StatCard, Title, TitleWrapper } from '../../components/Card'
+import { Input } from '../../components/Input'
 
 interface Props {
 
 }
 
-const Disputes = (props: Props) => {
+const Revenue = (props: Props) => {
     return (
         <div>
             <div className="py-6">
@@ -17,22 +17,28 @@ const Disputes = (props: Props) => {
                     <div className="">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                             <StatCard>
-                                <h1 className="text-lg text-gray-500 font-light">
-                                    PENDING DISPUTES
+                                <h1 className="text-md text-gray-500 uppercase font-light">
+                                    TRANSaction Revenue
                                 </h1>
-                                <h1 className="text-lg text-gray-900">0</h1>
+                                <h1 className="text-md text-gray-900 uppercase">0</h1>
                             </StatCard>
                             <StatCard>
-                                <h1 className="text-lg text-gray-500 font-light">
-                                    DISPUTES UNDER REVIEW
+                                <h1 className="text-md text-gray-500 font-light uppercase">
+                                    conversion Revenue
                                 </h1>
-                                <h1 className="text-lg text-gray-900">0</h1>
+                                <h1 className="text-md text-gray-900">0</h1>
                             </StatCard>
                             <StatCard>
-                                <h1 className="text-lg text-gray-500 font-light">
-                                    RESOLVED DISPUTES
+                                <h1 className="text-md text-gray-500 font-light uppercase">
+                                    GIftcards Revenue
                                 </h1>
-                                <h1 className="text-lg text-gray-900">0</h1>
+                                <h1 className="text-md text-gray-900">0</h1>
+                            </StatCard>
+                            <StatCard>
+                                <h1 className="text-md text-gray-500 font-light uppercase">
+                                    crypto Revenue
+                                </h1>
+                                <h1 className="text-md text-gray-900">0</h1>
                             </StatCard>
 
                         </div>
@@ -40,7 +46,7 @@ const Disputes = (props: Props) => {
                     {/* <!-- /End replace --> */}
                 </Layer>
                 <TitleWrapper>
-                    <Title>Unresolved Disputes</Title>
+                    <Title>Wallet and Funds in Trust</Title>
                 </TitleWrapper>
 
                 <Layer>
@@ -116,7 +122,83 @@ const Disputes = (props: Props) => {
                     </div>
                 </Layer>
                 <TitleWrapper>
-                    <Title>Resolved Disputes</Title>
+                    <Title>Recurrent Revenues</Title>
+                </TitleWrapper>
+                <Layer>
+                    <div className=" overflow-x-scroll border-b border-gray-200 sm:rounded-none">
+                        <table className="min-w-full divide-y divide-gray-200">
+                            <thead className="bg-gray-50">
+                                <tr>
+                                    <th
+                                        scope="col"
+                                        className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                                    >
+                                        TRADE ID
+                                    </th>
+                                    <th
+                                        scope="col"
+                                        className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                                    >
+                                        BUYER
+                                    </th>
+                                    <th
+                                        scope="col"
+                                        className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                                    >
+                                        SELLER
+                                    </th>
+                                    <th
+                                        scope="col"
+                                        className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                                    >
+                                        INITIAtor
+                                    </th>
+                                    <th
+                                        scope="col"
+                                        className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                                    >
+                                        TRADE ITEM
+                                    </th>
+
+                                    <th
+                                        scope="col"
+                                        className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                                    >
+                                        Action
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody className="bg-white divide-y divide-gray-200">
+                                <tr>
+                                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                        Jane Cooper
+                                    </td>
+                                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                        Regional Paradigm Technician
+                                    </td>
+                                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                        jane.cooper@example.com
+                                    </td>
+                                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                        Admin
+                                    </td>
+                                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                        Admin
+                                    </td>
+                                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                        Admin
+                                    </td>
+
+                                </tr>
+
+                                {/* <!-- More people... --> */}
+                            </tbody>
+                        </table>
+                    </div>
+                </Layer>
+
+                <TitleWrapper>
+                    <Title>Filter Revenue by Date</Title>
                 </TitleWrapper>
 
                 <Layer>
@@ -130,7 +212,7 @@ const Disputes = (props: Props) => {
                             <Input type="date" />
                         </div>
                         <div className="flex flex-col justify-end">
-                            <button className="bg-color-500 p-1.5 px-3 text-lg hover:bg-color-700 text-white">
+                            <button className="bg-color-300 p-2 px-3 text-lg hover:bg-color-700 text-white">
                                 Search Timelines{" "}
                             </button>
                         </div>
@@ -203,15 +285,15 @@ const Disputes = (props: Props) => {
                                         Kwame
                                     </td>
                                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                        <span className="bg-color-200 text-white px-4 rounded p-2">Active</span>
+                                        <span className="bg-blue-200 text-blue-700 px-4 rounded p-2">Active</span>
                                     </td>
                                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                         {new Date().toDateString()}
                                     </td>
                                     <td>
-                                        <ButtonOutline>
+                                        <button className="bg-color-500 px-2 text-white rounded">
                                             Retry Transfer
-                                        </ButtonOutline>
+                                        </button>
                                     </td>
                                 </tr>
 
@@ -226,5 +308,4 @@ const Disputes = (props: Props) => {
     )
 }
 
-
-export default Disputes
+export default Revenue
