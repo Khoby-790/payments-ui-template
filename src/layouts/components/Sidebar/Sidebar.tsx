@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 
 interface Props {}
 
@@ -267,8 +268,8 @@ const Sidebar = (props: Props) => {
               </div>
               <nav className="mt-5 flex-1 px-2 bg-white space-y-1">
                 {/* <!-- Current: "bg-blue-100 text-blue-900", Default: "text-blue-600 hover:bg-blue-50 hover:text-blue-900" --> */}
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="bg-blue-100 text-blue-900 group flex items-center px-2 py-2 text-sm font-medium rounded-md"
                 >
                   {/* <!-- */}
@@ -292,10 +293,10 @@ const Sidebar = (props: Props) => {
                     />
                   </svg>
                   Dashboard
-                </a>
+                </Link>
 
-                <a
-                  href="#"
+                <Link
+                  to="/user-profiles"
                   className="text-blue-600 hover:bg-blue-50 hover:text-blue-900 group flex items-center px-2 py-2 text-sm font-medium rounded-md"
                 >
                   {/* <!-- Heroicon name: outline/users --> */}
@@ -315,10 +316,10 @@ const Sidebar = (props: Props) => {
                     />
                   </svg>
                   User Profiles
-                </a>
+                </Link>
 
-                <a
-                  href="#"
+                <Link
+                  to="/revenue"
                   className="text-blue-600 hover:bg-blue-50 hover:text-blue-900 group flex items-center px-2 py-2 text-sm font-medium rounded-md"
                 >
                   {/* <!-- Heroicon name: outline/folder --> */}
@@ -338,10 +339,10 @@ const Sidebar = (props: Props) => {
                     />
                   </svg>
                   Revenue
-                </a>
+                </Link>
 
-                <a
-                  href="#"
+                <Link
+                  to="/disputes"
                   className="text-blue-600 hover:bg-blue-50 hover:text-blue-900 group flex items-center px-2 py-2 text-sm font-medium rounded-md"
                 >
                   {/* <!-- Heroicon name: outline/calendar --> */}
@@ -361,10 +362,10 @@ const Sidebar = (props: Props) => {
                     />
                   </svg>
                   Disputes
-                </a>
+                </Link>
 
-                <a
-                  href="#"
+                <Link
+                  to="btc-transfers"
                   className="text-blue-600 hover:bg-blue-50 hover:text-blue-900 group flex items-center px-2 py-2 text-sm font-medium rounded-md"
                 >
                   {/* <!-- Heroicon name: outline/chart-bar --> */}
@@ -384,7 +385,7 @@ const Sidebar = (props: Props) => {
                     />
                   </svg>
                   BTC Transfers
-                </a>
+                </Link>
               </nav>
             </div>
             <div className="flex-shrink-0 flex border-t border-blue-200 p-4">

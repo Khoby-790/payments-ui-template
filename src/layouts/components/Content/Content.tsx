@@ -1,7 +1,7 @@
-import React, { Fragment, lazy, Suspense } from "react";
+import React, { Fragment, Suspense } from "react";
 import { Switch, Route } from "react-router-dom";
+import routes from "../../Admin/routes";
 
-const Dashboard = lazy(() => import("../../../pages/Dashboard"));
 
 interface Props {}
 
@@ -15,7 +15,9 @@ const Content = (props: Props) => {
         </div>
         <Suspense fallback={<h1>Loading</h1>}>
           <Switch>
-            <Route exact path="/" component={Dashboard} />
+            {routes.map((route, index) => (
+              <Route key={index} exact={route.exact} path={route.path} component={route.component} />
+            ))}
           </Switch>
         </Suspense>
       </main>
